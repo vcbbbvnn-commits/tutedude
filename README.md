@@ -29,9 +29,47 @@ Enter the first number: 10
 Enter the second number: 5
 ```
 
-**Example output**
+# Assignment 1 — Exercises
+
+**Description**
+
+- `q1.py`: Prompts the user for two numbers and computes the four basic arithmetic operations: addition, subtraction, multiplication, and division.
+- `q2.py`: Prompts the user for a first name and last name, then prints a welcome message using the full name.
+
+**Files**
+
+- `q1.py` — Reads two numbers and prints results for addition, subtraction, multiplication, and division.
+- `q2.py` — Reads first and last names and prints a greeting.
+
+**Usage**
+
+From the `assignment1` folder run:
+
+```bash
+python q1.py
+```
+
+```bash
+python q2.py
+```
+
+If you're using the workspace virtual environment, run:
+
+```bash
+C:/Users/USER/OneDrive/Desktop/tutedude/.venv/Scripts/python.exe q1.py
+C:/Users/USER/OneDrive/Desktop/tutedude/.venv/Scripts/python.exe q2.py
+```
+
+When prompted, enter the required input values.
+
+**Examples**
+
+q1 example run:
 
 ```
+Enter the first number: 10
+Enter the second number: 5
+
 Results:
 Addition: 15.0
 Subtraction: 5.0
@@ -39,9 +77,20 @@ Multiplication: 50.0
 Division: 2.0
 ```
 
-**Notes**
+q2 example run:
 
-- The program expects numeric input (integers or decimals). Non-numeric input will raise an error.
-- Division by zero will raise an error in the current `q1.py` implementation; you can update the script to handle this case if desired.
+```
+Enter your first name: Ada
+Enter your last name: Lovelace
+Hello, Ada Lovelace! Welcome!
+```
 
-If you want, I can update `q1.py` to handle invalid input and division-by-zero gracefully — shall I proceed?
+**Notes & Suggestions**
+
+- Both scripts currently assume valid input. Non-numeric input to `q1.py` or division by zero will raise an error.
+- If you'd like, I can update `q1.py` to:
+	- validate numeric input and re-prompt on invalid values,
+	- handle division-by-zero gracefully (show a message instead of crashing),
+	- and add a small test harness or examples.
+
+Tell me if you want those improvements and I'll implement them.
